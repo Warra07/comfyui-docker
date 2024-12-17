@@ -28,8 +28,6 @@ RUN python3 -m venv venv && \
 
 RUN git clone https://github.com/ltdrdata/ComfyUI-Manager.git custom_nodes/ComfyUI-Manager
 
-VOLUME /app/comfyui
-
 EXPOSE 8188
 
 ENTRYPOINT ["/app/entrypoint.sh", "--listen", "0.0.0.0", "--port", "8188", "--preview-method", "auto"]
